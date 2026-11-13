@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildMart | Construction Supply & Rentals</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#"><span class="brand-mark">B</span><span>Build<span class="brand-accent">Mart</span><small>BUILD SMART. BUILD BETTER.</small></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  <nav id="mainNav"><a href="#materials">Materials</a><a href="#vehicles">Vehicles</a><a href="#equipment">Equipment</a><a href="#how">How it works</a></nav>
+  <div class="header-actions"><button class="cart-button" id="cartOpen">Cart <span id="cartCount">0</span></button><a class="admin-link" href="admin/login.php">Admin ↗</a></div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow"><span></span> YOUR PROJECT. ONE PLATFORM.</div>
+    <h1>Everything you need<br>to <em>build bigger.</em></h1>
+    <p>Construction materials, delivery vehicles and equipment rentals — all in one place, so your project keeps moving.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#materials">Explore materials <b>→</b></a><a class="text-link" href="#how">See how it works</a></div>
+    <div class="hero-proof"><div class="proof-avatars"><i>✓</i><i>⌂</i><i>+</i></div><span><strong>One simple platform</strong><br>for your site essentials</span></div>
+  </div>
+  <div class="hero-art">
+    <div class="art-label"><span class="pulse"></span> BUILT FOR THE GROUND UP</div>
+    <div class="sun"></div><div class="building"><div class="building-top"></div><div class="building-grid"></div></div>
+    <div class="crane"><div class="crane-mast"></div><div class="crane-arm"></div><div class="crane-cable"></div></div>
+    <div class="truck"><div class="truck-bed"></div><div class="truck-cab"></div><i></i><i></i></div>
+    <div class="ground"></div><div class="art-note"><strong>PLAN.</strong> SOURCE. BUILD.</div>
+  </div>
+</section>
+<section class="trust-strip"><span>THE SITE-READY COLLECTION</span><div>Materials <b>•</b> Transport <b>•</b> Equipment <b>•</b> All in one place</div></section>
+<section class="section" id="materials">
+  <div class="section-heading"><div><div class="eyebrow">01 / MATERIALS</div><h2>Get the essentials.</h2><p>Quality basics for every stage of construction.</p></div><a class="text-link" href="#materials">Browse all <b>→</b></a></div>
+  <div class="catalog-tools"><label class="search-box">⌕ <input id="productSearch" placeholder="Search materials..."></label><div class="filters" id="categoryFilters"><button class="filter active" data-category="All">All</button><button class="filter" data-category="Cement">Cement</button><button class="filter" data-category="Aggregates">Aggregates</button><button class="filter" data-category="Steel">Steel</button><button class="filter" data-category="Masonry">Masonry</button><button class="filter" data-category="Plumbing">Plumbing</button></div></div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+<section class="dark-section" id="vehicles">
+  <div class="section-heading"><div><div class="eyebrow light">02 / DELIVERY VEHICLES</div><h2>Move materials.<br><em>Move projects.</em></h2><p>Choose the right vehicle for your site delivery.</p></div><span class="section-number">02</span></div>
+  <div class="vehicle-grid">
+    <article class="vehicle-card"><div class="vehicle-visual mini">🚚</div><div><span class="tag">SMALL LOADS</span><h3>Mini Truck</h3><p>For compact deliveries and tight site access.</p><div class="vehicle-meta"><span>Approx. 1–1.5 ton</span><strong>From ₹800 / trip</strong></div><button class="outline-button vehicle-request" data-vehicle="Mini Truck">Request vehicle <b>→</b></button></div></article>
+    <article class="vehicle-card"><div class="vehicle-visual tractor">🚜</div><div><span class="tag">FLEXIBLE HAULING</span><h3>Tractor Trolley</h3><p>Useful for sand, gravel and medium site loads.</p><div class="vehicle-meta"><span>Approx. 2–3 ton</span><strong>From ₹1,200 / trip</strong></div><button class="outline-button vehicle-request" data-vehicle="Tractor Trolley">Request vehicle <b>→</b></button></div></article>
+    <article class="vehicle-card"><div class="vehicle-visual tipper">🚛</div><div><span class="tag">BULK DELIVERY</span><h3>Tipper Truck</h3><p>For larger aggregate and bulk material movement.</p><div class="vehicle-meta"><span>Approx. 6–10 ton</span><strong>From ₹2,500 / trip</strong></div><button class="outline-button vehicle-request" data-vehicle="Tipper Truck">Request vehicle <b>→</b></button></div></article>
+  </div>
+  <p class="disclaimer">* Capacities and trip charges are sample values for this academic prototype.</p>
+</section>
+<section class="section equipment-section" id="equipment">
+  <div class="section-heading"><div><div class="eyebrow">03 / EQUIPMENT RENTALS</div><h2>Tools for the tough jobs.</h2><p>Enquire about equipment for your required rental period.</p></div></div>
+  <div class="equipment-grid">
+    <article class="equipment-card"><div class="equipment-icon">⚙</div><div><h3>Concrete Mixer</h3><p>Consistent mixing for on-site concrete work.</p><strong>From ₹700 / day</strong></div><button class="circle-arrow rental-request" data-equipment="Concrete Mixer">↗</button></article>
+    <article class="equipment-card"><div class="equipment-icon">▥</div><div><h3>Plate Compactor</h3><p>Compact soil and prepare stable surfaces.</p><strong>From ₹500 / day</strong></div><button class="circle-arrow rental-request" data-equipment="Plate Compactor">↗</button></article>
+    <article class="equipment-card"><div class="equipment-icon">▤</div><div><h3>Scaffolding</h3><p>Temporary access for elevated work areas.</p><strong>From ₹250 / day</strong></div><button class="circle-arrow rental-request" data-equipment="Scaffolding">↗</button></article>
+  </div>
+  <p class="disclaimer">* Rental rates are illustrative sample values and do not confirm availability.</p>
+</section>
+<section class="how-section" id="how"><div class="eyebrow light">04 / SIMPLE PROCESS</div><h2>From list to site.<br><em>In a few steps.</em></h2><div class="steps"><div><span>01</span><h3>Choose</h3><p>Browse materials, vehicles or equipment.</p></div><div><span>02</span><h3>Send details</h3><p>Add quantities, location and preferred date.</p></div><div><span>03</span><h3>Track</h3><p>View your demo request status in one place.</p></div></div></section>
+<section class="cta-section"><div><div class="eyebrow">READY WHEN YOU ARE</div><h2>Let's get your site<br>moving.</h2></div><a href="#materials" class="btn btn-dark">Start your order <b>→</b></a></section>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">B</span><span>Build<span class="brand-accent">Mart</span><small>BUILD SMART. BUILD BETTER.</small></span></a><p>Construction supplies, vehicle requests & equipment rental enquiries.</p><span>© 2026 BuildMart · Academic prototype</span></footer>
+<div class="modal-backdrop" id="modalBackdrop"><section class="modal"><button class="modal-close" id="modalClose">×</button><div class="eyebrow">BUILDMART REQUEST</div><h2 id="modalTitle">Complete your request</h2><p id="modalSubtitle">Share a few details and submit your demo request.</p><form id="requestForm"><input type="hidden" name="request_type" id="requestType"><input type="hidden" name="item_name" id="itemName"><div class="form-grid"><label>Full name<input name="customer_name" required placeholder="Your name"></label><label>Phone number<input name="phone" required pattern="[0-9+ -]{8,15}" placeholder="Contact number"></label><label class="wide">Delivery / site address<textarea name="address" required rows="2" placeholder="Enter complete address"></textarea></label><label>Preferred date<input type="date" name="preferred_date" required></label><label id="quantityWrap">Quantity<input type="number" name="quantity" min="1" value="1"></label><label class="wide" id="periodWrap" hidden>Rental period<input name="rental_period" placeholder="e.g. 3 days"></label></div><button class="btn btn-primary submit-btn" type="submit">Submit demo request <b>→</b></button><p class="form-message" id="formMessage"></p></form></section></div>
+<aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><h2>Your cart <span id="drawerCount">0</span></h2><button id="cartClose">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-bottom"><div class="cart-total"><span>Estimated total</span><strong id="cartTotal">₹0</strong></div><button class="btn btn-primary" id="checkoutButton">Continue to checkout →</button><small>Sample prices only. No payment is collected.</small></div></aside><div class="drawer-scrim" id="drawerScrim"></div>
+<script src="assets/js/app.js"></script>
+</body></html>
